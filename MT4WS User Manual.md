@@ -20,7 +20,7 @@ The MT4WS tool is presented to users through a JSP web page for human-computer i
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps12.jpg) 
 
-<center> Figure 1: MT4WS System Welcome Page</center>
+<p align="center"> Figure 1: MT4WS System Welcome Page</p>
 
 ### 1.Welcome Page
 
@@ -28,7 +28,7 @@ When users enter the welcome page as shown in Figure 1, they are presented with 
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps13.jpg) 
 
-<center> Figure 2: Operation Selection Page</center>
+<p align="center"> Figure 2: Operation Selection Page</p>
 
 ### 2.Select Operation Page
 
@@ -40,13 +40,13 @@ Input one or more metamorphic relations on a specified operation interface, and 
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps14.jpg) 
 
-<center> Figure 3: Metamorphic Relation Input Page</center>
+<p align="center"> Figure 3: Metamorphic Relation Input Page</p>
 
 When defining metamorphic relations manually, as shown in Figure 3, "Define Metamorphic Relations Manually," the user needs to manually input input and output relations for the metamorphic relation. In the input relationship, the user defines function expressions for the input vectors of the original test case in the "Source" column and for the input vectors of the follow-up test case in the "Follow-up" column. In the "Relation" column, an operator for binary relations is selected to describe the relationship between the original test case and the follow-up test case. Similarly, in the output relationship, the user defines function expressions for the output vectors of the original test case, output vectors of the follow-up test case, and binary relation operators. After inputting one set of R and Rf, the user clicks the "Add to MR set" button to store the data in the database. Users can click the "Check MR set" button at any time to view the saved metamorphic relations.
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps15.jpg) 
 
-<center> Figure 4: View Metamorphic Relation Page</center>
+<p align="center"> Figure 4: View Metamorphic Relation Page</p>
 
 To use composite metamorphic relations, two or more metamorphic relations need to be predefined, and metamorphic relations already input and stored, as shown in Figure 4. Click the "Compose" button to execute the composite method, create a new composite metamorphic relation, and store it for use in subsequent metamorphic testing.
 
@@ -54,7 +54,7 @@ To obtain metamorphic relations by importing a file, as shown in Figure 3 with "
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps16.jpg) 
 
-<center> Figure 5: Data Mutation Page</center>
+<p align="center"> Figure 5: Data Mutation Page</p>
 
 To define metamorphic relations using the data mutation-based method, as shown in Figure 5 with "Data Mutation," select data mutation operators, input variables, output variables, and binary relation operators. Click the "Add to DM set" button, and the system exports the corresponding metamorphic relations based on mapping rules and stores them. Click "Next" to enter the test case generation page.
 
@@ -64,7 +64,7 @@ To define metamorphic relations using the data mutation-based method, as shown i
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps17.jpg) 
 
-<center> Figure 6: Original test case generation Page</center>
+<p align="center"> Figure 6: Original test case generation Page</p>
 
 After entering the metamorphic relations, you'll reach the original test case generation selection page, as shown in Figure 6. This testing tool provides three methods for generating original test cases: manual input, automatic generation, and file import. If you select manual test case generation, you must first choose a metamorphic relation and then manually enter the values of each variable in the original test case in the corresponding text boxes. The test cases are then added to the database. If you choose to import test cases from a file, you provide a file containing data for several original test cases. The tool automatically imports test cases from the file, and the file format follows "ATMTestCaseSet.xml." If you select random automatic test case generation, a certain number of valid test cases are automatically generated using random value methods for all metamorphic relations. The quantity can be specified by the user. Click "Next" to enter the test configuration page.
 
@@ -74,7 +74,7 @@ The test configuration page, as shown in Figure 7, allows users to view informat
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps18.jpg) 
 
-<center> Figure 7: View Test Information Page</center>
+<p align="center"> Figure 7: View Test Information Page</p>
 
 ### 6.Test Information Configuration
 
@@ -84,7 +84,7 @@ In this configuration page, as shown in Figure 8, users can select the metamorph
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps19.jpg) 
 
-<center> Figure 8: Test Information Configuration Page</center>
+<p align="center"> Figure 8: Test Information Configuration Page</p>
 
 ### 7.Execute Test
 
@@ -92,13 +92,13 @@ The test execution process page, as shown in Figure 9, displays the service name
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps20.jpg) 
 
-<center> Figure 9: Execute Test Page</center>
+<p align="center"> Figure 9: Execute Test Page</p>
 
 ### 8.View Test Report
 
 ![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps21.jpg) 
 
-<center> Figure10: View Test Report Page</center>
+<p align="center"> Figure10: View Test Report Page</p>
 
 After completing the test, you will enter the view test report page, as shown in Figure 10. This page provides detailed information about the test results. The first section, from top to bottom, includes information about the web service being tested, including the web service name, WSDL URI, and the start and end times of the test. The second section provides overall statistical results, listing all the operations tested in this session, and it shows the names of all the operations in the web service, including the invalid and valid operations. Valid operations are highlighted in black font, and invalid operations are shown in red font. The third section provides detailed information about invalid operations. It lists which metamorphic relations the operation fails to satisfy and which test cases discovered errors for each unsatisfied metamorphic relation. If users wish to view detailed information about metamorphic relations or test cases, they can click the "Check MRs" and "Check Test Suite" buttons. Users can click "Download Test Log" to download the test log. Finally, click "Exit MT4WS" to exit the tool and close the page.
 
