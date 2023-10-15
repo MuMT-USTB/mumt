@@ -18,7 +18,7 @@ MT4WS serves several key purposes in software testing and quality assurance:
 
 The MT4WS tool is presented to users through a JSP web page for human-computer interaction. Interaction with users during testing is done in a "wizard" style. The "wizard" method presents users with limited information at each step, along with detailed usage instructions. The advantage of this method is that it makes it easier for users to get started and facilitates ease of operation.
 
-![img](MT4WS User Manual.assets/wps12.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps12.jpg) 
 
 <center> Figure 1: MT4WS System Welcome Page
 
@@ -26,7 +26,7 @@ The MT4WS tool is presented to users through a JSP web page for human-computer i
 
 When users enter the welcome page as shown in Figure 1, they are presented with a WSDL URI input box. Users should enter the WSDL address of the web service they wish to test into this box and click the "start" button to parse the WSDL entered in the text box. If the parsing is successful, the process proceeds to the "Select Interface to Test" step. In case of failure, an exception is reported. Alternatively, users can choose to upload WSDL files.
 
-![img](MT4WS User Manual.assets/wps13.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps13.jpg) 
 
 <center> Figure 2: Operation Selection Page
 
@@ -38,13 +38,13 @@ Clicking the "start" button takes you to the WSDL operation list page, as shown 
 
 Input one or more metamorphic relations on a specified operation interface, and the interface is shown in Figure 3. The tool currently supports two modes for defining metamorphic relations, manual interaction mode and batch (file import) mode. It also supports two methods for obtaining metamorphic relations: data mutation-based metamorphic relation acquisition and composite metamorphic relation generation.
 
-![img](MT4WS User Manual.assets/wps14.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps14.jpg) 
 
 <center> Figure 3: Metamorphic Relation Input Page
 
 When defining metamorphic relations manually, as shown in Figure 3, "Define Metamorphic Relations Manually," the user needs to manually input input and output relations for the metamorphic relation. In the input relationship, the user defines function expressions for the input vectors of the original test case in the "Source" column and for the input vectors of the follow-up test case in the "Follow-up" column. In the "Relation" column, an operator for binary relations is selected to describe the relationship between the original test case and the follow-up test case. Similarly, in the output relationship, the user defines function expressions for the output vectors of the original test case, output vectors of the follow-up test case, and binary relation operators. After inputting one set of R and Rf, the user clicks the "Add to MR set" button to store the data in the database. Users can click the "Check MR set" button at any time to view the saved metamorphic relations.
 
-![img](MT4WS User Manual.assets/wps15.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps15.jpg) 
 
 <center> Figure 4: View Metamorphic Relation Page
 
@@ -52,7 +52,7 @@ To use composite metamorphic relations, two or more metamorphic relations need t
 
 To obtain metamorphic relations by importing a file, as shown in Figure 3 with "Import from XML file," the tool automatically reads the MRDL file and stores it. The specific format can be found in the "mrdl_transfer.xml" file.
 
-![img](MT4WS User Manual.assets/wps16.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps16.jpg) 
 
 <center> Figure 5: Data Mutation Page
 
@@ -62,7 +62,7 @@ To define metamorphic relations using the data mutation-based method, as shown i
 
  
 
-![img](MT4WS User Manual.assets/wps17.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps17.jpg) 
 
 <center> Figure 6: Original test case generation Page
 
@@ -72,7 +72,7 @@ After entering the metamorphic relations, you'll reach the original test case ge
 
 The test configuration page, as shown in Figure 7, allows users to view information about the web service to be tested, the operations to be tested, original test cases, follow-up test cases, and input metamorphic relations. Users can also configure their own test information by clicking "configuration" to enter the configuration selection page.
 
-![img](MT4WS User Manual.assets/wps18.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps18.jpg) 
 
 <center> Figure 7: View Test Information Page
 
@@ -82,7 +82,7 @@ In this configuration page, as shown in Figure 8, users can select the metamorph
 
  
 
-![img](MT4WS User Manual.assets/wps19.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps19.jpg) 
 
 <center> Figure 8: Test Information Configuration Page
 
@@ -90,13 +90,13 @@ In this configuration page, as shown in Figure 8, users can select the metamorph
 
 The test execution process page, as shown in Figure 9, displays the service name and operation interface being tested.
 
-![img](MT4WS User Manual.assets/wps20.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps20.jpg) 
 
 <center> Figure 9: Execute Test Page
 
 ### 8.View Test Report
 
-![img](MT4WS User Manual.assets/wps21.jpg) 
+![img](https://github.com/MuMT-USTB/mumt/blob/main/MT4WS%20User%20Manual.assets/wps21.jpg) 
 
 <center> Figure10: View Test Report Page
 
